@@ -29,14 +29,17 @@ nav ul li {
   margin: 0 15px;
 }
 
+/* Add button animations */
 nav ul li a {
   text-decoration: none;
   color: #ffcc00;
   font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 nav ul li a:hover {
   color: #ffffff;
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
 /* Section Styles */
@@ -84,10 +87,12 @@ footer {
     text-align: center;
     padding: 0;
   }
+
   nav ul li {
     display: block;
     margin: 10px 0;
   }
+
   section {
     margin: 10px;
   }

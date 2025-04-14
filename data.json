@@ -19,6 +19,18 @@
         "description": "A weapon imbued with psychic energy, used by Psykers."
     },
     {
+        "name": "Trauma Staff",
+        "type": "Weapon",
+        "class": "Psyker",
+        "description": "A staff that channels psychic energy to unleash devastating area-of-effect attacks."
+    },
+    {
+        "name": "Voidstrike Staff",
+        "type": "Weapon",
+        "class": "Psyker",
+        "description": "A staff that fires projectiles imbued with psychic energy, capable of piercing through enemies."
+    },
+    {
         "name": "Eviscerator",
         "type": "Weapon",
         "class": "Zealot",

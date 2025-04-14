@@ -11,21 +11,11 @@
 
   <body>
     <!-- partial:index.partial.html -->
-    <!DOCTYPE html>
-    <html lang="en">
-
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Darktide Fan Website</title>
-        <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-      </head>
-
-      <body>
         <header>
           <h1>Warhammer 40K: Darktide Fan Site</h1>
           <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/Warhammer-40k-Darktide-Preview-01-Header.jpg"
-            alt="Darktide logo" width="900" </img>
+            alt="Darktide logo" width="900" height="300" class="header-image">
+          <p>Welcome to the ultimate fan site for Warhammer 40K: Darktide! Explore lore, weapons, enemies, and more.</p>
           <nav>
             <ul>
               <li><a href="#lore">Lore & Story</a></li>
@@ -66,11 +56,30 @@
         <footer>
           <p>&copy; 2025 Darktide Fan Website</p>
         </footer>
+        <script>
+          // Fetch data from data.json and populate the database table
+          fetch('./data.json')
+            .then(response => response.json())
+            .then(data => {
+              const tableBody = document.querySelector('#database table tbody');
+
+              // Clear existing rows
+              tableBody.innerHTML = '';
+
+              // Populate table with data from JSON
+              const allEntries = [...data.weapons, ...data.enemies, ...data.missions];
+              allEntries.forEach(entry => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                  <td>${entry.name}</td>
+                  <td>${entry.type}</td>
+                  <td>${entry.description}</td>
+                `;
+                tableBody.appendChild(row);
+              });
+            })
+            .catch(error => console.error('Error loading data:', error));
+        </script>
       </body>
 
     </html>
-    <!-- partial -->
-
-  </body>
-
-</html>

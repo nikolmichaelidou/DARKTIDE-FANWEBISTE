@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weapons</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Weapons</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="lore.html">Lore</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2>Weapons Database</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Content will be dynamically loaded -->
+      </tbody>
+    </table>
+  </section>
+  <footer>
+    <p>&copy; 2025 Darktide Fan Website</p>
+  </footer>
+  <script>
+    fetch('./data.json')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.querySelector('table tbody');
+        tableBody.innerHTML = '';
+        data.weapons.forEach(weapon => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${weapon.name}</td>
+            <td>${weapon.type}</td>
+            <td>${weapon.description}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error('Error loading data:', error));
+  </script>
+</body>
+
+</html>

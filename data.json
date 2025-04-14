@@ -1,0 +1,67 @@
+{
+"weapons": [
+    {
+        "name": "Kantrael MG Infantry Lasgun",
+        "type": "Weapon",
+        "class": "Veteran",
+        "description": "A reliable and accurate standard-issue lasgun."
+    },
+    {
+        "name": "Ripper Gun",
+        "type": "Weapon",
+        "class": "Ogryn",
+        "description": "A brutal close-range weapon used by Ogryns."
+    },
+    {
+        "name": "Force Sword",
+        "type": "Weapon",
+        "class": "Psyker",
+        "description": "A weapon imbued with psychic energy, used by Psykers."
+    },
+    {
+        "name": "Eviscerator",
+        "type": "Weapon",
+        "class": "Zealot",
+        "description": "A massive chainsword favored by Zealots for close combat."
+    }
+],
+  "enemies": [
+    {
+      "name": "Poxwalker",
+      "type": "Enemy",
+      "description": "A plague-ridden zombie-like creature."
+    },
+    {
+      "name": "Scab Gunner",
+      "type": "Enemy",
+      "description": "A heavily armed heretic soldier specializing in ranged combat."
+    },
+    {
+      "name": "Mutant",
+      "type": "Enemy",
+      "description": "A grotesque and powerful abomination that charges at its prey."
+    },
+    {
+      "name": "Beast of Nurgle",
+      "type": "Enemy",
+      "description": "A massive, slug-like daemon that spreads disease and decay."
+    },
+    {
+      "name": "Plague Ogryn",
+      "type": "Enemy",
+      "description": "A hulking, corrupted Ogryn infected with Nurgle's rot."
+    },
+    {
+      "name": "Traitor Guardsman",
+      "type": "Enemy",
+      "description": "Former Imperial Guard soldiers turned traitors."
+    }
+  ],
+  "missions": [
+    {
+      "name": "Tertium Hive Cleansing",
+      "type": "Mission",
+      "description": "Purge the hive city of heretical forces."
+    }
+  ]
+}

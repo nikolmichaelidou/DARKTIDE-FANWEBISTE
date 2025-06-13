@@ -6,6 +6,7 @@ Welcome to the **Warhammer 40K: Psykers Compendium**, a fan-made project dedicat
 
 - **Psyker Lore**: Delve into the nature of psychic powers, the dangers of the warp, and the history of human psykers.
 - **Psychic Weapons**: Explore a collection of force weapons and psychic foci used by various psyker classes.
+- **Psychic Powers**: Browse a comprehensive database of psychic abilities organized by discipline, with details on casting values, range, and effects.
 - **Famous Battles**: Learn about significant conflicts where psykers played pivotal roles.
 - **Psyker Types**: Discover the different classifications and specializations of psykers in the Imperium.
 - **3D Models**: Interactive 3D models of psyker characters and equipment using Sketchfab.
@@ -32,6 +33,7 @@ Welcome to the **Warhammer 40K: Psykers Compendium**, a fan-made project dedicat
 
 - **Home**: Introduction to the world of psykers and the dangers they face
 - **Psychic Weapons**: Catalog of weapons imbued with psychic energy
+- **Psychic Powers**: Comprehensive database of abilities organized by discipline (Divination, Telekinesis, Pyromancy, etc.)
 - **Famous Battles**: Historical conflicts featuring significant psyker involvement
 - **Psyker Types**: Different classifications and roles of psykers within the Imperium
 

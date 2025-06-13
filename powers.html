@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Psychic Powers & Disciplines - Warhammer 40K</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Psychic Powers & Disciplines</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weapons.html">Psychic Weapons</a></li>
+        <li><a href="powers.html">Psychic Powers</a></li>
+        <li><a href="missions.html">Famous Battles</a></li>
+        <li><a href="classes.html">Psyker Types</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="intro-section">
+    <h2>The Manifestations of Psychic Might</h2>
+    <p class="section-intro">Psykers channel the raw energy of the warp into various disciplines and powers. Each requires different training, mental structures, and innate talents to master. Learn about the various psychic disciplines and their signature powers.</p>
+  </section>
+  
+  <section class="disciplines-overview">
+    <h2>Major Psychic Disciplines</h2>
+    <p>The Imperium and its adversaries categorize psychic powers into several disciplines, each representing different approaches to manipulating the warp.</p>
+    
+    <div class="discipline-grid">
+      <div class="discipline-card imperial-psyker">
+        <h3>Divination</h3>
+        <p>The art of seeing beyond normal perceptions—into the future, across vast distances, or through solid matter. Diviners are prized for their tactical value in anticipating enemy movements.</p>
+        <div class="discipline-icon">
+          <span class="icon-eye"></span>
+        </div>
+      </div>
+      
+      <div class="discipline-card librarian-psyker">
+        <h3>Telekinesis</h3>
+        <p>The manipulation of physical matter through psychic force. Telekinetics can hurl objects, create shields of force, or even crush enemies in invisible grips.</p>
+        <div class="discipline-icon">
+          <span class="icon-force"></span>
+        </div>
+      </div>
+      
+      <div class="discipline-card chaos-psyker">
+        <h3>Pyromancy</h3>
+        <p>Control over warp-infused flame and heat. Pyromancers are devastating offensive psykers who can incinerate entire squads or melt through tank armor.</p>
+        <div class="discipline-icon">
+          <span class="icon-flame"></span>
+        </div>
+      </div>
+      
+      <div class="discipline-card untrained-psyker">
+        <h3>Telepathy</h3>
+        <p>The reading and manipulation of minds. Telepaths can extract information, implant suggestions, or even hijack an enemy's consciousness entirely.</p>
+        <div class="discipline-icon">
+          <span class="icon-mind"></span>
+        </div>
+      </div>
+      
+      <div class="discipline-card imperial-psyker">
+        <h3>Biomancy</h3>
+        <p>Mastery over living flesh and biological processes. Biomancers can heal wounds, enhance physical attributes, or inflict terrible mutations on enemies.</p>
+        <div class="discipline-icon">
+          <span class="icon-life"></span>
+        </div>
+      </div>
+      
+      <div class="discipline-card librarian-psyker">
+        <h3>Technomancy</h3>
+        <p>The rare ability to interface psychically with technology. Technomancers can disable enemy weapons, overload power systems, or communicate with machine spirits.</p>
+        <div class="discipline-icon">
+          <span class="icon-tech"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="powers-database">
+    <h2>Powers Database</h2>
+    <p class="section-intro">Below are some of the most common and powerful psychic abilities documented by the Imperium. Each includes its warp charge value, range, effects, and which psykers are known to wield such power.</p>
+    
+    <div class="filter-container">
+      <label for="discipline-filter">Filter by Discipline:</label>
+      <select id="discipline-filter">
+        <option value="all">All Disciplines</option>
+        <option value="divination">Divination</option>
+        <option value="telekinesis">Telekinesis</option>
+        <option value="pyromancy">Pyromancy</option>
+        <option value="telepathy">Telepathy</option>
+        <option value="biomancy">Biomancy</option>
+        <option value="technomancy">Technomancy</option>
+      </select>
+    </div>
+    
+    <!-- Divination Powers -->
+    <div class="power-section" data-discipline="divination">
+      <h3>Divination Powers</h3>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Smite</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 5+</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker hurls a bolt of raw psychic energy at the nearest visible enemy unit, inflicting D3 mortal wounds. If the result of the Psychic test is 11+, the target suffers D6 mortal wounds instead.</p>
+        <p class="power-users">Used by: Most Sanctioned Psykers, Primaris Psykers, Astropaths, Space Marine Librarians</p>
+      </div>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Prescience</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 7</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker glimpses the threads of destiny, granting a friendly unit within range the ability to re-roll hit rolls of 1 until the start of your next Psychic phase.</p>
+        <p class="power-users">Used by: Farseer Eldrad Ulthran, Imperial Primaris Psykers, Navigator Houses</p>
+      </div>
+      
+      <div class="power-card librarian-psyker">
+        <div class="power-header">
+          <h4>Foreboding</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 6</span>
+            <span class="range">Range: Self</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker sees a few seconds into the future, allowing perfect anticipation of enemy attacks. Until your next Psychic phase, enemies cannot gain benefits from charging the psyker's unit, and the psyker gains +1 to hit in the Fight phase.</p>
+        <p class="power-users">Used by: Chief Librarian Tigurius, Grey Knights Purifiers</p>
+      </div>
+    </div>
+    
+    <!-- Telekinesis Powers -->
+    <div class="power-section" data-discipline="telekinesis">
+      <h3>Telekinesis Powers</h3>
+      
+      <div class="power-card librarian-psyker">
+        <div class="power-header">
+          <h4>Fury of the Ancients</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 7</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker calls upon the strength of those who came before, boosting their Strength and Weapon Skill by +2 until the start of the next Psychic phase. Additionally, melee weapons wielded by the psyker gain -1 AP.</p>
+        <p class="power-users">Used by: Space Marine Librarians, Grey Knights, Blood Angels Librarians</p>
+      </div>
+      
+      <div class="power-card librarian-psyker">
+        <div class="power-header">
+          <h4>Psychic Fortress</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 6</span>
+            <span class="range">Range: 12"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker creates a telekinetic dome that protects allies. Until your next Psychic phase, friendly units within range have a 5+ invulnerable save against mortal wounds caused by psychic powers.</p>
+        <p class="power-users">Used by: Grey Knights Brotherhood Champions, Ultramarines Librarians</p>
+      </div>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Force Dome</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 8</span>
+            <span class="range">Range: Self</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker creates an impenetrable dome of force around themselves. Until the start of your next Psychic phase, the psyker has a 3+ invulnerable save, but cannot move or fire weapons.</p>
+        <p class="power-users">Used by: Inquisitorial Psykers, High-ranking Primaris Psykers</p>
+      </div>
+    </div>
+    
+    <!-- Pyromancy Powers -->
+    <div class="power-section" data-discipline="pyromancy">
+      <h3>Pyromancy Powers</h3>
+      
+      <div class="power-card chaos-psyker">
+        <div class="power-header">
+          <h4>The Red Thirst</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 8</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker conjures roaring warp-fire that engulfs an enemy unit. The target suffers D6 mortal wounds. If a model is slain by this power, roll a D6 for each other model in the unit; on a 6, that model suffers 1 mortal wound as the flames spread.</p>
+        <p class="power-users">Used by: Thousand Sons Sorcerers, Tzeentch-aligned Chaos Psykers</p>
+      </div>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Fire Shield</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 6</span>
+            <span class="range">Range: Self</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker surrounds themselves with a shield of purifying flame. Until your next Psychic phase, any unit that finishes a charge move within 1" of the psyker suffers D3 mortal wounds as the flames leap to consume them.</p>
+        <p class="power-users">Used by: Sisters of Battle Canoness Psykers, Imperial Guard Battle Psykers</p>
+      </div>
+      
+      <div class="power-card chaos-psyker">
+        <div class="power-header">
+          <h4>Infernal Gateway</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 9</span>
+            <span class="range">Range: 12"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker tears a smoking gateway to the warp, causing a catastrophic implosion. Roll 2D6; each unit within range takes mortal wounds equal to the number of units within range (maximum 6 wounds).</p>
+        <p class="power-users">Used by: Magnus the Red, Lord of Change, Chaos Sorcerer Lords</p>
+      </div>
+    </div>
+    
+    <!-- Telepathy Powers -->
+    <div class="power-section" data-discipline="telepathy">
+      <h3>Telepathy Powers</h3>
+      
+      <div class="power-card untrained-psyker">
+        <div class="power-header">
+          <h4>Psychic Shriek</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 6</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker unleashes a deafening scream of psychic energy that tears through the minds of their enemies. Roll 3D6; if the total exceeds the target's Leadership characteristic, it suffers D3 mortal wounds.</p>
+        <p class="power-users">Used by: Rogue Psykers, Wyrdvane Psykers, Untrained Wild Talents</p>
+      </div>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Dominate</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 8</span>
+            <span class="range">Range: 12"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker seizes control of an enemy model's mind. Select one enemy model within range; in your opponent's next Shooting phase, you may choose the target of that model's attacks, which can include other enemy units.</p>
+        <p class="power-users">Used by: Inquisitorial Interrogators, Ordo Malleus Psykers</p>
+      </div>
+      
+      <div class="power-card chaos-psyker">
+        <div class="power-header">
+          <h4>Mental Anguish</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 7</span>
+            <span class="range">Range: 24"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker inflicts torturous mental pain upon the enemy. Select an enemy unit within range; that unit subtracts 2 from their Leadership characteristic until the start of your next turn, and must roll 2D6 when taking Morale tests, using the highest result.</p>
+        <p class="power-users">Used by: Night Lords Sorcerers, Dark Eldar Haemonculi Psykers</p>
+      </div>
+    </div>
+    
+    <!-- Biomancy Powers -->
+    <div class="power-section" data-discipline="biomancy">
+      <h3>Biomancy Powers</h3>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Quickening</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 7</span>
+            <span class="range">Range: Self</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker accelerates their metabolism and neural pathways to achieve incredible speed. Until your next Psychic phase, the psyker gains +2 to their Move characteristic and +1 Attack.</p>
+        <p class="power-users">Used by: Blood Angels Librarians, White Scars Stormseer Psykers</p>
+      </div>
+      
+      <div class="power-card untrained-psyker">
+        <div class="power-header">
+          <h4>Enfeeble</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 8</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker causes the enemy's muscles to wither and bones to soften. Select an enemy unit within range; until your next Psychic phase, that unit subtracts 1 from its Strength and Toughness characteristics (to a minimum of 1).</p>
+        <p class="power-users">Used by: Plague Marines, Nurgle Sorcerers, Death Guard Psykers</p>
+      </div>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Life Leech</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 7</span>
+            <span class="range">Range: 12"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker drains the life force from nearby enemies, using it to heal themselves. Select an enemy unit within range; it suffers D3 mortal wounds, and the psyker regains the same number of lost wounds.</p>
+        <p class="power-users">Used by: Blood Angels Sanguinary Priests with psychic abilities, Inquisitorial Biomancers</p>
+      </div>
+    </div>
+    
+    <!-- Technomancy Powers -->
+    <div class="power-section" data-discipline="technomancy">
+      <h3>Technomancy Powers</h3>
+      
+      <div class="power-card librarian-psyker">
+        <div class="power-header">
+          <h4>Machine Curse</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 7</span>
+            <span class="range">Range: 24"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker sends disruptive energy into enemy machines. Select an enemy VEHICLE within range; it suffers D3 mortal wounds and halves its Movement characteristic (rounding down) until the start of your next Psychic phase.</p>
+        <p class="power-users">Used by: Iron Hands Librarians, Adeptus Mechanicus Psykers, Tech-Marines with psychic ability</p>
+      </div>
+      
+      <div class="power-card imperial-psyker">
+        <div class="power-header">
+          <h4>Machine Spirit's Blessing</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 6</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker communes with and empowers the machine spirit of a friendly vehicle. Select one friendly VEHICLE within range; until your next Psychic phase, that vehicle automatically hits with one of its weapons in your Shooting phase.</p>
+        <p class="power-users">Used by: Tech-Priest Dominus with psychic abilities, Iron Hands Master of the Forge</p>
+      </div>
+      
+      <div class="power-card chaos-psyker">
+        <div class="power-header">
+          <h4>Scrapcode Curse</h4>
+          <div class="power-stats">
+            <span class="warp-charge">Warp Charge: 8</span>
+            <span class="range">Range: 18"</span>
+          </div>
+        </div>
+        <p class="power-description">The psyker infects enemy technology with viral scrapcode. Select an enemy unit within range that has the VEHICLE keyword; it suffers D3 mortal wounds and must subtract 1 from its hit rolls until the start of your next Psychic phase.</p>
+        <p class="power-users">Used by: Dark Mechanicum Psykers, Iron Warriors Warsmiths with psychic abilities</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Warhammer 40K: Psykers Compendium - For the Emperor's Glory!</p>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const disciplineFilter = document.getElementById('discipline-filter');
+      const powerSections = document.querySelectorAll('.power-section');
+      
+      disciplineFilter.addEventListener('change', function() {
+        const selectedDiscipline = this.value;
+        
+        powerSections.forEach(section => {
+          if (selectedDiscipline === 'all' || section.dataset.discipline === selectedDiscipline) {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+      
+      // Load additional power data if available
+      fetch('./data.json')
+        .then(response => response.json())
+        .then(data => {
+          console.log('Data loaded for psychic powers page');
+          // Additional dynamic content can be added here when data is available
+          if (data.psychicPowers) {
+            // Example: populate additional powers if they exist in the JSON
+          }
+        })
+        .catch(error => console.error('Error loading data:', error));
+    });
+  </script>
+</body>
+
+</html>

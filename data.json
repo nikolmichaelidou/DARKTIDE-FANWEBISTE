@@ -102,5 +102,31 @@
       "type": "Daemonic Incursion",
       "description": "Where the Grey Knights and Space Wolves fought against Angron and his Bloodthirsters, showcasing titanic psychic battles."
     }
+  ],
+  "psychicPowers": [
+    {
+      "name": "Smite",
+      "discipline": "Divination",
+      "warpCharge": "5+",
+      "range": "18\"",
+      "description": "The psyker hurls a bolt of raw psychic energy at the nearest visible enemy unit, inflicting D3 mortal wounds. If the result of the Psychic test is 11+, the target suffers D6 mortal wounds instead.",
+      "users": ["Most Sanctioned Psykers", "Primaris Psykers", "Astropaths", "Space Marine Librarians"]
+    },
+    {
+      "name": "Prescience",
+      "discipline": "Divination",
+      "warpCharge": "7",
+      "range": "18\"",
+      "description": "The psyker glimpses the threads of destiny, granting a friendly unit within range the ability to re-roll hit rolls of 1 until the start of your next Psychic phase.",
+      "users": ["Farseer Eldrad Ulthran", "Imperial Primaris Psykers", "Navigator Houses"]
+    },
+    {
+      "name": "The Red Thirst",
+      "discipline": "Pyromancy",
+      "warpCharge": "8",
+      "range": "18\"",
+      "description": "The psyker conjures roaring warp-fire that engulfs an enemy unit. The target suffers D6 mortal wounds. If a model is slain by this power, roll a D6 for each other model in the unit; on a 6, that model suffers 1 mortal wound as the flames spread.",
+      "users": ["Thousand Sons Sorcerers", "Tzeentch-aligned Chaos Psykers"]
+    }
   ]
 }

@@ -17,7 +17,7 @@ Welcome to the **Warhammer 40K: Darktide Fan Site**, a fan-made project dedicate
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/darktide-fan-website.git
+   git clone https://github.com/nikolmichaelidou/darktide-fan-website.git
 
 A Pen created on CodePen.
 

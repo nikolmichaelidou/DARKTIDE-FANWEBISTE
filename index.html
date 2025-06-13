@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Warhammer 40K: Darktide Fan Site</title>
+    <title>Warhammer 40K: Psykers Compendium</title>
     <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
     <link rel="stylesheet" href="./style.css">
 
@@ -12,52 +12,73 @@
   <body>
     <!-- partial:index.partial.html -->
         <header>
-          <h1>Warhammer 40K: Darktide Fan Site</h1>
-          <img src="https://media1.tenor.com/m/Hj6KeSutmC0AAAAd/darktide-warhammer.gif"
-            alt="Darktide logo" width="900" height="300" class="header-image">
-          <p>Welcome to the ultimate fan site for Warhammer 40K: Darktide! Explore lore, weapons, enemies, and more.</p>
+          <h1>Warhammer 40K: Psykers Compendium</h1>
+          <img src="https://cdn.prod.website-files.com/65786ec854ee7451f4f72921/66fe99f00ca5980d0998f880_65786ec854ee7451f4f72bbf_Psyker_02.jpeg"
+            alt="concept art from ddarktide" width="900" height="380" class="header-image">
+          <p>Delve into the mysterious world of the Imperium's psychic warriors. Explore psyker disciplines, warp phenomena, and the constant battle against daemonic possession.</p>
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="weapons.html">Weapons</a></li>
-              <li><a href="missions.html">Missions</a></li>
-              <li><a href="classes.html">Classes</a></li>
+              <li><a href="weapons.html">Psychic Weapons</a></li>
+              <li><a href="missions.html">Famous Battles</a></li>
+              <li><a href="classes.html">Psyker Types</a></li>
             </ul>
           </nav>
         </header>
-        <section id="lore">
-          <h2>Lore & Story</h2>
-          <p>Explore the rich lore of Tertium Hive and the Darktide universe.</p>
+        <section id="intro">
+          <h2>The Gift and the Curse</h2>
+          <p>In the dark future of the 41st millennium, psykers are humans born with the ability to tap into the immaterial realm known as the Warp. While these powers make them invaluable to the Imperium, they also make them dangerous and feared.</p>
           <div class="lore-entry">
-            <h3>The Moebian Sixth</h3>
-            <p>The Moebian Sixth are former Imperial Guard troops turned traitors...</p>
+            <h3>The Black Ships</h3>
+            <p>Every day, thousands of psykers manifest their powers across the Imperium. The Black Ships of the Adeptus Astra Telepathica travel from world to world, collecting these individuals before they can cause catastrophe. Many become sanctioned psykers serving the Imperium, while others feed the insatiable hunger of the Golden Throne...</p>
           </div>
-          <!-- Add more lore entries here -->
+          <div class="lore-entry">
+            <h3>The Soul Binding</h3>
+            <p>Those psykers deemed useful to the Imperium undergo the Soul Binding ritual, where they gaze upon a fraction of the Emperor's radiance. This painful process either kills them, drives them insane, or renders them blind—but also helps protect them from daemonic possession and gives them greater control over their abilities.</p>
+          </div>
+        </section>        <section id="abilities">
+          <h2>Psychic Disciplines</h2>
+          <div class="discipline-grid">
+            <div class="discipline-card">
+              <h3>Telepathy</h3>
+              <p>The art of mind reading, mental manipulation, and psychic communication across vast distances.</p>
+            </div>
+            <div class="discipline-card">
+              <h3>Telekinesis</h3>
+              <p>The ability to move objects with the power of the mind, create psychic barriers, and even crush enemies.</p>
+            </div>
+            <div class="discipline-card">
+              <h3>Pyromancy</h3>
+              <p>The manipulation of warp energies to create and control devastating flames that burn both body and soul.</p>
+            </div>
+            <div class="discipline-card">
+              <h3>Divination</h3>
+              <p>The ability to glimpse the strands of fate, predict enemy movements, and see possible futures.</p>
+            </div>
+          </div>
         </section>
-              <footer>
-          <p>&copy; 2025 Darktide Fan Website</p>
+        
+        <section id="perils">
+          <h2>Perils of the Warp</h2>
+          <p>Every time a psyker draws upon the immaterium, they risk attracting the attention of the predatory entities that dwell there. These "Perils of the Warp" can manifest as:</p>
+          <ul class="perils-list">
+            <li><strong>Daemonic Possession</strong> - The ultimate risk for any psyker, where a warp entity takes control of their body</li>
+            <li><strong>Psychic Backlash</strong> - Uncontrolled energies rebounding into the psyker's mind</li>
+            <li><strong>Warp Rifts</strong> - Temporary tears in reality that allow daemons to enter realspace</li>
+            <li><strong>Mind Burns</strong> - Neural damage that can leave a psyker catatonic or worse</li>
+          </ul>
+        </section>
+
+        <footer>
+          <p>&copy; 2025 Warhammer 40K: Psykers Compendium - For the Emperor's Glory!</p>
         </footer>
         <script>
-          // Fetch data from data.json and populate the database table
+          // Fetch data from data.json and populate any dynamic elements
           fetch('./data.json')
             .then(response => response.json())
             .then(data => {
-              const tableBody = document.querySelector('#database table tbody');
-
-              // Clear existing rows
-              tableBody.innerHTML = '';
-
-              // Populate table with data from JSON
-              const allEntries = [...data.weapons, ...data.enemies, ...data.missions];
-              allEntries.forEach(entry => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                  <td>${entry.name}</td>
-                  <td>${entry.type}</td>
-                  <td>${entry.description}</td>
-                `;
-                tableBody.appendChild(row);
-              });
+              // Update with psyker-specific content when available
+              console.log('Data loaded successfully');
             })
             .catch(error => console.error('Error loading data:', error));
         </script>

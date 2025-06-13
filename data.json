@@ -1,79 +1,106 @@
 {
-"weapons": [
+  "weapons": [
     {
-        "name": "Kantrael MG Infantry Lasgun",
-        "type": "Weapon",
-        "class": "Veteran",
-        "description": "A reliable and accurate standard-issue lasgun."
+      "name": "Force Sword",
+      "type": "Psychic Weapon",
+      "class": "Psyker",
+      "description": "A sword imbued with psychic energy that can cut through both physical matter and the warp essence of daemons."
     },
     {
-        "name": "Ripper Gun",
-        "type": "Weapon",
-        "class": "Ogryn",
-        "description": "A brutal close-range weapon used by Ogryns."
+      "name": "Force Staff",
+      "type": "Psychic Weapon",
+      "class": "Psyker",
+      "description": "A staff that acts as a psychic focus, amplifying the psyker's abilities and allowing for more precise manipulation of the warp."
     },
     {
-        "name": "Force Sword",
-        "type": "Weapon",
-        "class": "Psyker",
-        "description": "A weapon imbued with psychic energy, used by Psykers."
+      "name": "Force Axe",
+      "type": "Psychic Weapon",
+      "class": "Psyker",
+      "description": "A ceremonial axe that channels destructive psychic energy, capable of cleaving through heavy armor and daemon hide."
     },
     {
-        "name": "Trauma Staff",
-        "type": "Weapon",
-        "class": "Psyker",
-        "description": "A staff that channels psychic energy to unleash devastating area-of-effect attacks."
+      "name": "Animus Speculum",
+      "type": "Psychic Focus",
+      "class": "Culexus Assassin",
+      "description": "A device that channels the anti-psychic void of a Culexus Assassin into deadly energy beams powered by nearby psykers."
     },
     {
-        "name": "Voidstrike Staff",
-        "type": "Weapon",
-        "class": "Psyker",
-        "description": "A staff that fires projectiles imbued with psychic energy, capable of piercing through enemies."
+      "name": "Psychic Hood",
+      "type": "Psychic Defense",
+      "class": "Librarian",
+      "description": "A specialized helmet that enhances a Space Marine Librarian's ability to detect and counter enemy psychic attacks."
     },
     {
-        "name": "Eviscerator",
-        "type": "Weapon",
-        "class": "Zealot",
-        "description": "A massive chainsword favored by Zealots for close combat."
-    }
-],
-  "enemies": [
-    {
-      "name": "Poxwalker",
-      "type": "Enemy",
-      "description": "A plague-ridden zombie-like creature."
+      "name": "Nemesis Force Weapon",
+      "type": "Psychic Weapon",
+      "class": "Grey Knight",
+      "description": "A specialized force weapon crafted for the Grey Knights, designed specifically for combating daemons and channeling their unique psychic abilities."
     },
     {
-      "name": "Scab Gunner",
-      "type": "Enemy",
-      "description": "A heavily armed heretic soldier specializing in ranged combat."
+      "name": "Runestaff",
+      "type": "Psychic Focus",
+      "class": "Psyker",
+      "description": "An ancient staff inscribed with complex runes that help stabilize warp energies, reducing the risk of perils of the warp."
     },
     {
-      "name": "Mutant",
-      "type": "Enemy",
-      "description": "A grotesque and powerful abomination that charges at its prey."
-    },
-    {
-      "name": "Beast of Nurgle",
-      "type": "Enemy",
-      "description": "A massive, slug-like daemon that spreads disease and decay."
-    },
-    {
-      "name": "Plague Ogryn",
-      "type": "Enemy",
-      "description": "A hulking, corrupted Ogryn infected with Nurgle's rot."
-    },
-    {
-      "name": "Traitor Guardsman",
-      "type": "Enemy",
-      "description": "Former Imperial Guard soldiers turned traitors."
+      "name": "Null Rod",
+      "type": "Anti-Psyker",
+      "class": "Inquisitor",
+      "description": "A rare device that creates a zone of psychic nullification, preventing the use of psychic powers in its vicinity."
     }
   ],
-  "missions": [
+  "psykers": [
     {
-      "name": "Tertium Hive Cleansing",
-      "type": "Mission",
-      "description": "Purge the hive city of heretical forces."
+      "name": "Mephiston",
+      "type": "Space Marine Librarian",
+      "description": "Lord of Death, Chief Librarian of the Blood Angels. One of the most powerful psykers in the Imperium who overcame the Black Rage."
+    },
+    {
+      "name": "Tigurius",
+      "type": "Space Marine Librarian",
+      "description": "Chief Librarian of the Ultramarines, renowned for his prophetic abilities and said to be the strongest psyker in the Astartes."
+    },
+    {
+      "name": "Ahriman",
+      "type": "Chaos Sorcerer",
+      "description": "Former Chief Librarian of the Thousand Sons, now a powerful Chaos sorcerer seeking the Black Library."
+    },
+    {
+      "name": "Ezekiel",
+      "type": "Space Marine Librarian",
+      "description": "Grand Master of Librarians of the Dark Angels, keeper of ancient secrets and wielder of the Book of Salvation."
+    },
+    {
+      "name": "Malcador the Sigillite",
+      "type": "Human Psyker",
+      "description": "The Emperor's right hand during the Great Crusade and Horus Heresy, one of the most powerful human psykers in history."
+    },
+    {
+      "name": "Magnus the Red",
+      "type": "Primarch",
+      "description": "The crimson Primarch of the Thousand Sons Legion, a being of immense psychic power who fell to Chaos."
+    }
+  ],
+  "battles": [
+    {
+      "name": "The Battle of Prospero",
+      "type": "Historic Battle",
+      "description": "The devastating assault on the Thousand Sons homeworld that marked a tragic turning point in the Horus Heresy."
+    },
+    {
+      "name": "The Emperor vs. Horus",
+      "type": "Historic Battle",
+      "description": "The final confrontation between the Emperor of Mankind and his fallen son Horus aboard the Vengeful Spirit."
+    },
+    {
+      "name": "The Psychneuein Infestation of Sarosh",
+      "type": "Psychic Threat",
+      "description": "A major psychic infestation where Grey Knights battled warp creatures that laid eggs in psykers' brains."
+    },
+    {
+      "name": "The First War for Armageddon",
+      "type": "Daemonic Incursion",
+      "description": "Where the Grey Knights and Space Wolves fought against Angron and his Bloodthirsters, showcasing titanic psychic battles."
     }
   ]
 }

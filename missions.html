@@ -3,55 +3,93 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Missions</title>
+  <title>Famous Battles - Warhammer 40K Psykers</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <header>
-    <h1>Missions</h1>
+    <h1>Famous Battles & Psychic Conflicts</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="weapons.html">Weapons</a></li>
-        <li><a href="missions.html">Missions</a></li>
-        <li><a href="classes.html">Classes</a></li>
+        <li><a href="weapons.html">Psychic Weapons</a></li>
+        <li><a href="missions.html">Famous Battles</a></li>
+        <li><a href="classes.html">Psyker Types</a></li>
       </ul>
     </nav>
   </header>
+  
+  <section class="intro-section">
+    <h2>Historic Confrontations in the Warp and Beyond</h2>
+    <p>Throughout the history of the Imperium, psykers have played crucial roles in decisive battles, sometimes determining the fate of entire worlds with their powers.</p>
+  </section>
+  
+  <section class="major-battles">
+    <h2>Legendary Psychic Conflicts</h2>
+    
+    <div class="battle-card">
+      <h3>The Battle of Prospero</h3>
+      <p>The tragic confrontation between the Space Wolves and the Thousand Sons, where the psychic might of Magnus the Red and his legion faced the wrath of Leman Russ. The planet became a battleground of devastating psychic energies.</p>
+    </div>
+    
+    <div class="battle-card">
+      <h3>The Emperor vs. Horus</h3>
+      <p>The ultimate psychic duel between the Emperor of Mankind and his fallen son Horus, aboard the Vengeful Spirit. This titanic clash of psychic power decided the fate of humanity itself.</p>
+    </div>
+    
+    <div class="battle-card">
+      <h3>The Burning of Prospero</h3>
+      <p>When the Sisters of Silence and Custodes brought their anti-psychic abilities against the stronghold of the greatest psychic legion of Space Marines, resulting in catastrophic devastation.</p>
+    </div>
+    
+    <div class="battle-card">
+      <h3>The Battle for Cadia</h3>
+      <p>Where Abaddon the Despoiler unleashed hordes of warp-tainted psykers against Imperial defenses, requiring heroic sacrifices from Imperial psykers to counter them.</p>
+    </div>
+  </section>
+  
   <section>
-    <h2>Missions Database</h2>
+    <h2>Notable Psychic Battles Database</h2>
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
+          <th>Event</th>
+          <th>Period</th>
+          <th>Significance</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="battles-table">
         <!-- Content will be dynamically loaded -->
+        <tr>
+          <td>The Siege of Terra</td>
+          <td>Horus Heresy</td>
+          <td>The culmination of the Horus Heresy where the Emperor's psychic might was tested against the chaos-empowered traitors.</td>
+        </tr>
+        <tr>
+          <td>The Council of Nikaea</td>
+          <td>Great Crusade</td>
+          <td>The Emperor's ruling on the use of psychic powers among the Space Marine Legions, with far-reaching consequences.</td>
+        </tr>
+        <tr>
+          <td>The Battle of the Fang</td>
+          <td>M32</td>
+          <td>The Thousand Sons' assault on the Space Wolves' fortress-monastery, featuring devastating psychic warfare.</td>
+        </tr>
       </tbody>
     </table>
   </section>
+  
   <footer>
-    <p>&copy; 2025 Darktide Fan Website</p>
+    <p>&copy; 2025 Warhammer 40K: Psykers Compendium - For the Emperor's Glory!</p>
   </footer>
+  
   <script>
     fetch('./data.json')
       .then(response => response.json())
       .then(data => {
-        const tableBody = document.querySelector('table tbody');
-        tableBody.innerHTML = '';
-        data.missions.forEach(mission => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td>${mission.name}</td>
-            <td>${mission.type}</td>
-            <td>${mission.description}</td>
-          `;
-          tableBody.appendChild(row);
-        });
+        console.log('Data loaded for battles page');
+        // Additional dynamic content can be added here when data is available
       })
       .catch(error => console.error('Error loading data:', error));
   </script>

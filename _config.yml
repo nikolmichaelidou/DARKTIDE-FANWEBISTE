@@ -1,0 +1,109 @@
+# Site settings for Warhammer 40K: Psykers Compendium
+title: Warhammer 40K: Psykers Compendium
+description: >-
+  The ultimate resource for information about psykers in the Warhammer 40K universe.
+  Explore the rich lore, psychic disciplines, famous psykers, and the perils of the warp.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-midnight # A dark theme that fits the grim dark aesthetic
+
+# Custom site variables
+author:
+  name: Nikol
+  email: your-email@example.com
+
+# Psyker-specific settings
+psyker_disciplines:
+  - name: Telepathy
+    description: Mind reading and mental manipulation
+  - name: Telekinesis
+    description: Moving objects with psychic power
+  - name: Pyromancy
+    description: Manipulation of warp fire
+  - name: Divination
+    description: Seeing strands of the future
+
+# Social media (add your social media handles here)
+social:
+  twitter: 
+  github: 
+  discord: 
+
+# Site sections configuration
+sections:
+  - name: Home
+    url: /index.html
+  - name: Psychic Weapons
+    url: /weapons.html
+  - name: Famous Battles
+    url: /missions.html
+  - name: Psyker Types
+    url: /classes.html
+
+# SEO settings
+google_analytics: # Add your Google Analytics ID here
+keywords: >-
+  warhammer 40k, psykers, librarians, warp, chaos, imperium, space marines,
+  psychic powers, force weapons, magnus the red, emperor of mankind
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  psykers:
+    output: true
+  weapons:
+    output: true
+  battles:
+    output: true
+
+# Defaults for pages
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "psykers"
+    values:
+      layout: psyker
+  - scope:
+      path: ""
+      type: "weapons"
+    values:
+      layout: weapon
+  - scope:
+      path: ""
+      type: "battles"
+    values:
+      layout: battle
+
+# Site features
+features:
+  - name: Psychic Disciplines
+    description: Detailed information about the various psychic disciplines
+  - name: Famous Psykers
+    description: Profiles of notable psykers throughout Imperial history
+  - name: Warp Phenomena
+    description: Explanations of warp-related events and manifestations
+  - name: Anti-Psyker Technology
+    description: Information on tools used to combat or restrain psykers
+
+# Build exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.txt
+  - README.md

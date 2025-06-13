@@ -1,26 +1,42 @@
 /* General Styles */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #121212;
+  background-color: var(--bg-dark);
   color: #e6e6e6;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-image: radial-gradient(circle at 50% 50%, var(--bg-dark), #070711);
 }
 
 /* Header Styles */
 header {
-  background: linear-gradient(to bottom, #1a1a1a, #121212);
+  background: linear-gradient(to bottom, var(--bg-medium), var(--bg-dark));
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid var(--psyker-blue);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid var(--psyker-purple);
+  box-shadow: 0 2px 15px rgba(138, 43, 226, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(9, 196, 222, 0.08), transparent 60%),
+              radial-gradient(circle at 70% 50%, rgba(138, 43, 226, 0.08), transparent 60%);
+  pointer-events: none;
 }
 
 header h1 {
   margin: 0;
-  color: #d3a922;
-  text-shadow: 0 0 8px var(--psyker-blue);
+  color: var(--imperium-gold);
+  text-shadow: 0 0 8px var(--psyker-blue), 0 0 15px var(--psyker-purple);
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -36,30 +52,44 @@ nav ul li {
 /* Add button animations */
 nav ul li a {
   text-decoration: none;
-  color: #d3a922;
+  color: var(--imperium-gold);
   font-weight: bold;
   padding: 8px 15px;
   border-radius: 4px;
-  background-color: rgba(122, 28, 28, 0.1);
+  background-color: rgba(9, 196, 222, 0.1);
   transition: all 0.3s ease;
+  border: 1px solid rgba(138, 43, 226, 0.3);
 }
 
 nav ul li a:hover {
   color: #ffffff;
-  background-color: rgba(122, 28, 28, 0.5);
+  background-color: rgba(138, 43, 226, 0.3);
   transform: scale(1.05);
-  box-shadow: 0 0 8px rgba(211, 169, 34, 0.4);
+  box-shadow: var(--warp-glow);
 }
 
 /* Section Styles */
 section {
   padding: 25px;
   margin: 20px;
-  background-color: #1d1d1d;
+  background-color: var(--bg-medium);
   border-radius: 8px;
-  border-left: 3px solid #7a1c1c;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-left: 3px solid var(--psyker-purple);
+  box-shadow: 0 3px 10px rgba(9, 196, 222, 0.15);
   animation: fadeIn 0.5s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(9, 196, 222, 0.03) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 /* Table Styles */
@@ -118,10 +148,26 @@ h2 {
   font-size: 1.8em;
   border-bottom: 1px solid #7a1c1c;
   padding-bottom: 10px;
+  color: var(--psyker-blue);
+  position: relative;
+  text-shadow: 0 0 8px rgba(9, 196, 222, 0.4);
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--psyker-purple), var(--psyker-blue));
+  border-radius: 3px;
 }
 
 h3 {
   font-size: 1.4em;
+  color: var(--psyker-vibrant);
+  text-shadow: 0 0 5px rgba(255, 94, 255, 0.4);
 }
 
 /* Additional Element Styles */
@@ -144,25 +190,39 @@ h3 {
 
 /* Button and Interactive Element Styles */
 button, .button {
-  background-color: #7a1c1c;
+  background-color: var(--librarian-blue);
   color: #e6e6e6;
-  border: none;
+  border: 1px solid var(--psyker-blue);
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px var(--psyker-blue);
 }
 
 button:hover, .button:hover {
-  background-color: #9e2424;
+  background-color: var(--psyker-purple);
+  box-shadow: var(--warp-glow);
 }
 
 /* Psyker-themed styles */
 :root {
-  --psyker-blue: #1e90ff;
-  --psyker-purple: #6a0dad;
-  --warp-glow: 0 0 10px #1e90ff, 0 0 20px #6a0dad;
+  /* Primary colors */
+  --psyker-blue: #09C4DE;      /* Greenish-blue for controlled psychic power */
+  --psyker-purple: #8A2BE2;    /* Rich purple for warp energy */
+  --psyker-vibrant: #FF5EFF;   /* Vibrant magenta for raw psychic power */
+  --psyker-chaos: #F25D27;     /* Chaotic orange-red for chaos influence */
+  --librarian-blue: #1D428A;   /* Deeper blue for loyalist psykers */
+  
+  /* Background colors */
+  --bg-dark: #0F0E17;          /* Darker background to represent the void */
+  --bg-medium: #1A1A2E;        /* Medium dark with slight purple tint */
+  
+  /* Accent colors */
+  --imperium-gold: #D4AF37;    /* Imperial gold accent */
+  --warp-glow: 0 0 10px #09C4DE, 0 0 20px #8A2BE2; /* Updated glow effect */
+  --chaos-glow: 0 0 10px #F25D27, 0 0 20px #8A2BE2; /* Chaotic glow effect */
 }
 
 /* Psyker-specific element styles */
@@ -232,6 +292,81 @@ button:hover, .button:hover {
   margin: 20px 0;
 }
 
+/* 3D Model Viewer */
+.model-viewer-section {
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.model-container {
+  position: relative;
+  background-color: rgba(15, 14, 23, 0.8);
+  border: 1px solid var(--psyker-blue);
+  border-left: 3px solid var(--psyker-purple);
+  box-shadow: var(--warp-glow);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 30px;
+  animation: psychicPulse 4s infinite;
+}
+
+.sketchfab-embed-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.sketchfab-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.section-intro {
+  color: var(--imperium-gold);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(9, 196, 222, 0.5), 0 0 10px rgba(138, 43, 226, 0.3);
+  position: relative;
+}
+
+.model-caption {
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgba(10, 10, 10, 0.8);
+  border-radius: 4px;
+  border-left: 2px solid var(--psyker-blue);
+}
+
+.model-caption a {
+  text-decoration: none;
+  color: var(--imperium-gold) !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.model-caption a:hover {
+  color: var(--psyker-vibrant) !important;
+  text-shadow: 0 0 3px var(--psyker-purple), 0 0 6px var(--psyker-blue);
+}
+
+.model-description {
+  text-align: center;
+  color: #e6e6e6;
+  margin: 15px 0 0;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 4px;
+  border-left: 3px solid #7a1c1c;
+}
+
 /* Animation and Effects */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
@@ -241,8 +376,16 @@ button:hover, .button:hover {
 /* Psychic animation effects */
 @keyframes psychicPulse {
   0% { box-shadow: 0 0 5px var(--psyker-blue); }
+  25% { box-shadow: 0 0 10px var(--psyker-vibrant); }
   50% { box-shadow: 0 0 15px var(--psyker-purple); }
+  75% { box-shadow: 0 0 10px var(--psyker-vibrant); }
   100% { box-shadow: 0 0 5px var(--psyker-blue); }
+}
+
+@keyframes chaosWarp {
+  0% { box-shadow: 0 0 5px var(--psyker-chaos); }
+  50% { box-shadow: 0 0 15px var(--psyker-purple); }
+  100% { box-shadow: 0 0 5px var(--psyker-chaos); }
 }
 
 .psyker-type h3, .discipline-card h3 {
@@ -279,4 +422,76 @@ a:focus, button:focus {
   h2 {
     font-size: 1.5em;
   }
+}
+
+/* Psyker-specific element styles */
+.psyker-type {
+  margin-bottom: 30px;
+}
+
+/* Different psyker faction styles */
+.imperial-psyker {
+  border-left: 3px solid var(--psyker-blue);
+}
+
+.imperial-psyker h3 {
+  color: var(--psyker-blue);
+}
+
+.chaos-psyker {
+  border-left: 3px solid var(--psyker-chaos);
+  animation: chaosWarp 5s infinite;
+}
+
+.chaos-psyker h3 {
+  color: var(--psyker-chaos);
+  text-shadow: 0 0 5px rgba(242, 93, 39, 0.5);
+}
+
+.untrained-psyker {
+  border-left: 3px solid var(--psyker-vibrant);
+}
+
+.untrained-psyker h3 {
+  color: var(--psyker-vibrant);
+}
+
+.librarian-psyker {
+  border-left: 3px solid var(--librarian-blue);
+}
+
+.librarian-psyker h3 {
+  color: var(--librarian-blue);
+}
+
+/* Different psyker type highlights */
+.highlight-blue {
+  color: var(--psyker-blue);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(9, 196, 222, 0.6);
+}
+
+.highlight-librarian {
+  color: var(--librarian-blue);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(29, 66, 138, 0.6);
+}
+
+.highlight-vibrant {
+  color: var(--psyker-vibrant);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 94, 255, 0.6);
+}
+
+.highlight-chaos {
+  color: var(--psyker-chaos);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(242, 93, 39, 0.6);
+}
+
+.psyker-types-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }

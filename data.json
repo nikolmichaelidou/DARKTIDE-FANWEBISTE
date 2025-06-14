@@ -128,5 +128,43 @@
       "description": "The psyker conjures roaring warp-fire that engulfs an enemy unit. The target suffers D6 mortal wounds. If a model is slain by this power, roll a D6 for each other model in the unit; on a 6, that model suffers 1 mortal wound as the flames spread.",
       "users": ["Thousand Sons Sorcerers", "Tzeentch-aligned Chaos Psykers"]
     }
+  ],
+  "artifacts": [
+    {
+      "name": "The Armor of Antilochus",
+      "type": "Imperial Artifact",
+      "faction": "Ultramarines",
+      "description": "Ancient artificer armor that amplifies the wearer's connection to the warp while maintaining stability."
+    },
+    {
+      "name": "The Black Lotus Icon",
+      "type": "Imperial Artifact",
+      "faction": "Sisters of Silence",
+      "description": "A mysterious null-energy focus that amplifies the Sisters' natural pariah gene, projecting waves of anti-psychic energy."
+    },
+    {
+      "name": "The Cogitator Intensifier",
+      "type": "Imperial Artifact",
+      "faction": "Grey Knights",
+      "description": "A rare device enhancing the cerebral implants of Grey Knights Librarians, boosting cognitive function and psychic potential."
+    },
+    {
+      "name": "The Crystal of Tzeentch",
+      "type": "Chaos Artifact",
+      "faction": "Thousand Sons",
+      "description": "A mysterious ever-changing crystal containing a fragment of Tzeentch's essence, constantly morphing in form and color."
+    },
+    {
+      "name": "The Tome of Malefic Dreams",
+      "type": "Chaos Artifact",
+      "faction": "Chaos Sorcerers",
+      "description": "A forbidden grimoire bound in human skin containing the nightmares of a thousand slain psykers."
+    },
+    {
+      "name": "Ghosthelm",
+      "type": "Xenos Artifact",
+      "faction": "Aeldari",
+      "description": "An advanced psychic focusing device worn by Aeldari Farseers that helps mask their presence in the Warp."
+    }
   ]
 }

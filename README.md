@@ -7,6 +7,7 @@ Welcome to the **Warhammer 40K: Psykers Compendium**, a fan-made project dedicat
 - 📜 **Psyker Lore**: Delve into the nature of psychic powers, the dangers of the warp, and the history of human psykers.
 - ⚔️ **Psychic Weapons**: Explore a collection of force weapons and psychic foci used by various psyker classes.
 - 🔮 **Psychic Powers**: Browse a comprehensive database of psychic abilities organized by discipline, with details on casting values, range, and effects.
+- 🏆 **Artifacts & Relics**: Discover legendary items of psychic might from across the galaxy, including faction-specific relics.
 - 🎲 **Tabletop Rules**: Learn about Perils of the Warp, faction-specific doctrines, and gameplay mechanics with rulebook references.
 - ⚡ **Famous Battles**: Learn about significant conflicts where psykers played pivotal roles.
 - 👁️ **Psyker Types**: Discover the different classifications and specializations of psykers in the Imperium.
@@ -35,6 +36,7 @@ Welcome to the **Warhammer 40K: Psykers Compendium**, a fan-made project dedicat
 - 🏠 **Home**: Introduction to the world of psykers and the dangers they face
 - ⚔️ **Psychic Weapons**: Catalog of weapons imbued with psychic energy
 - 🔮 **Psychic Powers**: Comprehensive database of abilities organized by discipline (Divination, Telekinesis, Pyromancy, etc.)
+- 🏆 **Artifacts & Relics**: Legendary items of psychic might from various factions (Ultramarines, Sisters of Silence, Grey Knights, Chaos, Xenos)
 - 🎲 **Game Mechanics**: Rules references and tabletop gaming mechanics for psyker units
 - 🔥 **Famous Battles**: Historical conflicts featuring significant psyker involvement
 - 👤 **Psyker Types**: Different classifications and roles of psykers within the Imperium

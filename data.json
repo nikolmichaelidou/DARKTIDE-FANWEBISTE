@@ -4,49 +4,57 @@
       "name": "Force Sword",
       "type": "Psychic Weapon",
       "class": "Psyker",
-      "description": "A sword imbued with psychic energy that can cut through both physical matter and the warp essence of daemons."
+      "description": "A sword imbued with psychic energy that can cut through both physical matter and the warp essence of daemons.",
+      "imageUrl": "https://i.namu.wiki/i/-McpCJhDXV0ZIJIyW8AC8WYOyKs5yF_Sx8IajVZcLMCdkZLc5y53tM25A-zmpRMm3YriYwX_1RieBcAITjI0rg.webp"
     },
     {
       "name": "Force Staff",
       "type": "Psychic Weapon",
       "class": "Psyker",
-      "description": "A staff that acts as a psychic focus, amplifying the psyker's abilities and allowing for more precise manipulation of the warp."
+      "description": "A staff that acts as a psychic focus, amplifying the psyker's abilities and allowing for more precise manipulation of the warp.",
+      "imageUrl": "https://steamuserimages-a.akamaihd.net/ugc/2013701833164526304/647F1DD08BF461A093B99C8BEECB9A0AA831EB19/"
     },
     {
       "name": "Force Axe",
       "type": "Psychic Weapon",
       "class": "Psyker",
-      "description": "A ceremonial axe that channels destructive psychic energy, capable of cleaving through heavy armor and daemon hide."
+      "description": "A ceremonial axe that channels destructive psychic energy, capable of cleaving through heavy armor and daemon hide.",
+      "imageUrl": "https://miniset.net/files/set/gw-99800101082-0.jpg"
     },
     {
       "name": "Animus Speculum",
       "type": "Psychic Focus",
       "class": "Culexus Assassin",
-      "description": "A device that channels the anti-psychic void of a Culexus Assassin into deadly energy beams powered by nearby psykers."
+      "description": "A device that channels the anti-psychic void of a Culexus Assassin into deadly energy beams powered by nearby psykers.",
+      "imageUrl": "https://images.example.com/animus-speculum.jpg"
     },
     {
       "name": "Psychic Hood",
       "type": "Psychic Defense",
       "class": "Librarian",
-      "description": "A specialized helmet that enhances a Space Marine Librarian's ability to detect and counter enemy psychic attacks."
+      "description": "A specialized helmet that enhances a Space Marine Librarian's ability to detect and counter enemy psychic attacks.",
+      "imageUrl": "https://images.example.com/psychic-hood.jpg"
     },
     {
       "name": "Nemesis Force Weapon",
       "type": "Psychic Weapon",
       "class": "Grey Knight",
-      "description": "A specialized force weapon crafted for the Grey Knights, designed specifically for combating daemons and channeling their unique psychic abilities."
+      "description": "A specialized force weapon crafted for the Grey Knights, designed specifically for combating daemons and channeling their unique psychic abilities.",
+      "imageUrl": "https://images.example.com/nemesis-force-weapon.jpg"
     },
     {
       "name": "Runestaff",
       "type": "Psychic Focus",
       "class": "Psyker",
-      "description": "An ancient staff inscribed with complex runes that help stabilize warp energies, reducing the risk of perils of the warp."
+      "description": "An ancient staff inscribed with complex runes that help stabilize warp energies, reducing the risk of perils of the warp.",
+      "imageUrl": "https://images.example.com/runestaff.jpg"
     },
     {
       "name": "Null Rod",
       "type": "Anti-Psyker",
       "class": "Inquisitor",
-      "description": "A rare device that creates a zone of psychic nullification, preventing the use of psychic powers in its vicinity."
+      "description": "A rare device that creates a zone of psychic nullification, preventing the use of psychic powers in its vicinity.",
+      "imageUrl": "https://images.example.com/null-rod.jpg"
     }
   ],
   "psykers": [
@@ -134,37 +142,121 @@
       "name": "The Armor of Antilochus",
       "type": "Imperial Artifact",
       "faction": "Ultramarines",
-      "description": "Ancient artificer armor that amplifies the wearer's connection to the warp while maintaining stability."
+      "description": "Ancient artificer armor that amplifies the wearer's connection to the warp while maintaining stability.",
+      "imageUrl": "https://images.example.com/armor-of-antilochus.jpg",
+      "tabletopEffects": [
+        "Grants +1 Willpower to the wearer",
+        "Allows re-rolls of Psychic tests once per turn",
+        "Provides 2+ armor save and 5+ invulnerable save"
+      ],
+      "loreNote": "Legend says Antilochus successfully resisted possession by a Lord of Change for seven days, using the armor's unique properties to contain and eventually banish the daemon."
     },
     {
       "name": "The Black Lotus Icon",
       "type": "Imperial Artifact",
       "faction": "Sisters of Silence",
-      "description": "A mysterious null-energy focus that amplifies the Sisters' natural pariah gene, projecting waves of anti-psychic energy."
+      "description": "A mysterious null-energy focus that amplifies the Sisters' natural pariah gene, projecting waves of anti-psychic energy.",
+      "imageUrl": "https://images.example.com/black-lotus-icon.jpg",
+      "tabletopEffects": [
+        "Once per battle, unleashes a nova blast of null-energy",
+        "All enemy PSYKER units within 12\" suffer D3 mortal wounds",
+        "Enemy units within 6\" cannot use psychic powers in their next Psychic phase"
+      ],
+      "loreNote": "The Black Lotus Icon was created during the Age of Strife from materials harvested from a dead star. It contains a fragment of the anti-psychic energy that emanates from the core of the Black Ships used to transport psykers to Terra."
     },
     {
       "name": "The Cogitator Intensifier",
       "type": "Imperial Artifact",
       "faction": "Grey Knights",
-      "description": "A rare device enhancing the cerebral implants of Grey Knights Librarians, boosting cognitive function and psychic potential."
+      "description": "A rare device enhancing the cerebral implants of Grey Knights Librarians, boosting cognitive function and psychic potential.",
+      "imageUrl": "https://images.example.com/cogitator-intensifier.jpg",
+      "tabletopEffects": [
+        "Improves the Librarian's psychic phase capabilities",
+        "Allows the psyker to attempt to manifest one additional psychic power per turn",
+        "When manifesting Smite, it inflicts D6 mortal wounds instead of D3"
+      ],
+      "loreNote": "The Cogitator Intensifier was developed by Archmagos Dominus Belisarius Cawl in collaboration with the Grey Knights, using technology recovered from an ancient vault on Mars."
     },
     {
       "name": "The Crystal of Tzeentch",
       "type": "Chaos Artifact",
       "faction": "Thousand Sons",
-      "description": "A mysterious ever-changing crystal containing a fragment of Tzeentch's essence, constantly morphing in form and color."
+      "description": "A mysterious ever-changing crystal containing a fragment of Tzeentch's essence, constantly morphing in form and color.",
+      "imageUrl": "https://images.example.com/crystal-of-tzeentch.jpg",
+      "tabletopEffects": [
+        "At the start of each Psychic phase, randomly determine a benefit",
+        "+2 to Psychic tests for one power",
+        "Cast one additional power",
+        "Double the range of one psychic power",
+        "On a result of 1, the bearer suffers D3 mortal wounds as the crystal turns on them"
+      ],
+      "loreNote": "The Crystal of Tzeentch is said to contain visions of multiple possible futures, granting its bearer flashes of prescience but slowly driving them insane with forbidden knowledge."
     },
     {
       "name": "The Tome of Malefic Dreams",
       "type": "Chaos Artifact",
       "faction": "Chaos Sorcerers",
-      "description": "A forbidden grimoire bound in human skin containing the nightmares of a thousand slain psykers."
+      "description": "A forbidden grimoire bound in human skin containing the nightmares of a thousand slain psykers.",
+      "imageUrl": "https://images.example.com/tome-of-malefic-dreams.jpg",
+      "tabletopEffects": [
+        "Before the battle, select up to three psychic powers from any discipline",
+        "The bearer knows these powers in addition to their others",
+        "Roll a D6 each time the bearer manifests a power from the Tome; on a 1, they suffer a mortal wound"
+      ],
+      "loreNote": "The Tome is rumored to have been created by a conclave of renegade Librarians from various chapters who turned to Chaos during the 13th Black Crusade. It feeds on the psychic essence of its owner over time."
     },
     {
       "name": "Ghosthelm",
       "type": "Xenos Artifact",
       "faction": "Aeldari",
-      "description": "An advanced psychic focusing device worn by Aeldari Farseers that helps mask their presence in the Warp."
+      "description": "An advanced psychic focusing device worn by Aeldari Farseers that helps mask their presence in the Warp.",
+      "imageUrl": "https://images.example.com/ghosthelm.jpg",
+      "tabletopEffects": [
+        "The wearer does not suffer Perils of the Warp on a double 1, only on a double 6",
+        "Enemy psykers subtract 1 from Psychic tests when targeting the wearer",
+        "Once per battle, can completely negate one psychic power attempting to target the wearer"
+      ],
+      "loreNote": "Ghosthelms are crafted by Aeldari Bonesingers using psycho-reactive wraithbone that adapts to its wearer's mind over centuries of use."
+    },
+    {
+      "name": "Staff of Tomorrow",
+      "type": "Xenos Artifact",
+      "faction": "Aeldari",
+      "description": "An ancient staff used by the most powerful Aeldari Farseers, allowing them to not only see but influence future events through precise psychic manipulations of fate's threads.",
+      "imageUrl": "https://images.example.com/staff-of-tomorrow.jpg",
+      "tabletopEffects": [
+        "At the start of your Command phase, select one die result that will be rolled by either player that turn. When that roll is made, you can choose to change it to the result you declared.",
+        "Once per battle, the bearer can re-roll all failed Psychic tests in a single Psychic phase.",
+        "The bearer knows one additional power from the Runes of Fate discipline."
+      ],
+      "loreNote": "The Staff of Tomorrow contains crystallized fragments from the broken Aeldari god of fate Morai-Heg, granting glimpses of multiple futures and the power to subtly influence them."
+    },
+    {
+      "name": "Synaptic Amplifier",
+      "type": "Xenos Artifact",
+      "faction": "Tyranids",
+      "description": "A specialized bio-construct grown by the Hive Mind for enhanced Zoanthropes and Neurothropes, allowing for more efficient control of the swarm and devastating psychic attacks.",
+      "imageUrl": "https://images.example.com/synaptic-amplifier.jpg",
+      "tabletopEffects": [
+        "Increase the bearer's Synapse Range by 6\".",
+        "Add 1 to the result of Psychic tests taken for the bearer.",
+        "When manifesting Smite, it inflicts D3+1 mortal wounds or D6+1 on a roll of 11+.",
+        "Friendly TYRANID units within 12\" of the bearer gain +1 to their Leadership characteristic."
+      ],
+      "loreNote": "Each Synaptic Amplifier is uniquely grown for a specific Tyranid psyker organism and cannot be used by others. If the host is killed, the amplifier quickly atrophies and is reabsorbed into the Hive Fleet's biomass."
+    },
+    {
+      "name": "Gloom Prism",
+      "type": "Xenos Artifact",
+      "faction": "Necrons",
+      "description": "A mysterious blackstone artifact created during the War in Heaven to counter the psychic powers of the Old Ones and their creations. The prism emits a dampening field that disrupts warp-based abilities.",
+      "imageUrl": "https://images.example.com/gloom-prism.jpg",
+      "tabletopEffects": [
+        "Enemy psykers within 18\" of this artifact must subtract 1 from their Psychic tests.",
+        "The bearer can deny one psychic power per turn as if they were a psyker.",
+        "Once per battle, prevent all enemy units within 12\" from attempting to manifest any psychic powers during that phase."
+      ],
+      "loreNote": "The Gloom Prism contains microscopic fragments of the same material used in the pylons on Cadia. While nowhere near as powerful, these devices are still highly effective at disrupting the connection between psykers and the Warp."
     }
   ]
 }

@@ -292,6 +292,27 @@ button:hover, .button:hover {
   margin: 20px 0;
 }
 
+/* Weapon Image Styles */
+.weapon-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 10px;
+}
+
+.weapon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.weapon-card:hover .weapon-img {
+  transform: scale(1.05);
+}
+
 /* 3D Model Viewer */
 .model-viewer-section {
   margin: 40px auto;
@@ -639,130 +660,6 @@ a:focus, button:focus {
   right: 15px;
   opacity: 0.3;
   font-size: 1.5em;
-}
-
-/* Artifacts Page Styles */
-.artifacts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
-  margin: 20px 0 40px 0;
-}
-
-.artifact-card {
-  background-color: rgba(15, 14, 23, 0.8);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.artifact-card:hover {
-  transform: translateY(-5px);
-}
-
-.imperial-psyker.artifact-card:hover {
-  box-shadow: var(--warp-glow);
-}
-
-.librarian-psyker.artifact-card:hover {
-  box-shadow: 0 0 10px var(--librarian-blue), 0 0 20px rgba(29, 66, 138, 0.5);
-}
-
-.chaos-psyker.artifact-card:hover {
-  box-shadow: var(--chaos-glow);
-}
-
-.untrained-psyker.artifact-card:hover {
-  box-shadow: 0 0 10px var(--psyker-vibrant), 0 0 20px rgba(255, 94, 255, 0.5);
-}
-
-.artifact-header {
-  padding: 15px 20px;
-  background: linear-gradient(to right, rgba(15, 14, 23, 0.95), rgba(26, 26, 46, 0.9));
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(138, 43, 226, 0.3);
-}
-
-.artifact-header h3 {
-  margin: 0;
-  font-size: 1.3em;
-}
-
-.imperial-psyker .artifact-header h3 {
-  color: var(--psyker-blue);
-}
-
-.librarian-psyker .artifact-header h3 {
-  color: var(--librarian-blue);
-}
-
-.chaos-psyker .artifact-header h3 {
-  color: var(--psyker-chaos);
-}
-
-.untrained-psyker .artifact-header h3 {
-  color: var(--psyker-vibrant);
-}
-
-.faction-badge {
-  background-color: rgba(15, 14, 23, 0.8);
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.8em;
-  color: var(--imperium-gold);
-}
-
-.artifact-image {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
-.artifact-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.artifact-card:hover .artifact-img {
-  transform: scale(1.05);
-}
-
-.artifact-description {
-  padding: 20px;
-}
-
-.artifact-rules {
-  margin-top: 15px;
-  padding: 15px;
-  background-color: rgba(10, 10, 14, 0.5);
-  border-radius: 6px;
-}
-
-.artifact-rules h4 {
-  margin-top: 0;
-  color: var(--imperium-gold);
-  border-bottom: 1px solid rgba(138, 43, 226, 0.2);
-  padding-bottom: 8px;
-  margin-bottom: 15px;
-}
-
-.artifact-rules ul {
-  padding-left: 20px;
-  margin-bottom: 15px;
-}
-
-.lore-note {
-  font-style: italic;
-  color: #aaa;
-  font-size: 0.9em;
-  border-top: 1px dotted rgba(138, 43, 226, 0.2);
-  padding-top: 10px;
-  margin-bottom: 0;
 }
 
 /* Psychic Rules Page Styles */

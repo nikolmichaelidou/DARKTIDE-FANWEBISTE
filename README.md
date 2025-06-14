@@ -18,8 +18,9 @@ Welcome to the **Warhammer 40K: Psykers Compendium**, a fan-made project dedicat
 
 - 🌐 **HTML5**: For the structure of the website.
 - 🎨 **CSS3**: For styling and responsive design.
-- 📊 **JSON**: For storing and managing weapon and psyker data.
+- 📊 **JSON**: For storing and managing weapon, psyker, and artifact data.
 - 🔄 **Sketchfab Embeds**: Integration of professional 3D models from Sketchfab.
+- 📝 **JavaScript**: For dynamic loading of images and interactive features.
 
 ## 🚀 How to Use
 

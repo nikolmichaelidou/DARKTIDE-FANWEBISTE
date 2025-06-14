@@ -6,6 +6,7 @@
     <title>Psychic Weapons - Warhammer 40K</title>
     <link rel="stylesheet" href="./style.css">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="./scripts/load-weapons.js"></script>
   </head>
 
   <body>
@@ -48,17 +49,26 @@
       <p>Force weapons are psychically attuned to their wielder, allowing a psyker to channel warp energy through the weapon to devastating effect.</p>
 
       <div class="weapons-grid">
-        <div class="weapon-card">
+        <div class="weapon-card" data-weapon="Force Sword">
+          <div class="weapon-image">
+            <img src="https://cdn.prod.website-files.com/65786ec854ee7451f4f72921/66fe99f00ca5980d0998f879_artifactplaceholder.jpg" alt="Force Sword" class="weapon-img">
+          </div>
           <h3>Force Sword</h3>
           <p>A blade that can sever both flesh and soul when charged with psychic energy. Standard issue for many Space Marine Librarians.</p>
         </div>
 
-        <div class="weapon-card">
+        <div class="weapon-card" data-weapon="Force Staff">
+          <div class="weapon-image">
+            <img src="https://cdn.prod.website-files.com/65786ec854ee7451f4f72921/66fe99f00ca5980d0998f879_artifactplaceholder.jpg" alt="Force Staff" class="weapon-img">
+          </div>
           <h3>Force Staff</h3>
           <p>A staff that acts as a focus for psychic energy, allowing more precise manipulation of warp energies and powerful ranged attacks.</p>
         </div>
 
-        <div class="weapon-card">
+        <div class="weapon-card" data-weapon="Force Axe">
+          <div class="weapon-image">
+            <img src="https://cdn.prod.website-files.com/65786ec854ee7451f4f72921/66fe99f00ca5980d0998f879_artifactplaceholder.jpg" alt="Force Axe" class="weapon-img">
+          </div>
           <h3>Force Axe</h3>
           <p>Combining the cutting power of an axe with psychic reinforcement, these weapons can cleave through armor and daemon flesh alike.</p>
         </div>
@@ -67,9 +77,10 @@
 
     <section>
       <h2>Psychic Foci & Equipment</h2>
-      <table>
+      <table id="weapons-table">
         <thead>
           <tr>
+            <th>Image</th>
             <th>Name</th>
             <th>Type</th>
             <th>Description</th>
@@ -79,6 +90,55 @@
           <!-- Content will be dynamically loaded -->
         </tbody>
       </table>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          fetch('/data.json')
+            .then(response => response.json())
+            .then(data => {
+              const tableBody = document.querySelector('#weapons-table tbody');
+              
+              if (data.weapons && Array.isArray(data.weapons)) {
+                data.weapons.forEach(weapon => {
+                  if (weapon.type === "Psychic Focus" || weapon.type === "Psychic Defense" || weapon.type === "Anti-Psyker") {
+                    const row = document.createElement('tr');
+                    
+                    // Image cell
+                    const imageCell = document.createElement('td');
+                    const img = document.createElement('img');
+                    img.src = weapon.imageUrl || "https://cdn.prod.website-files.com/65786ec854ee7451f4f72921/66fe99f00ca5980d0998f879_artifactplaceholder.jpg";
+                    img.alt = weapon.name;
+                    img.width = 80;
+                    img.height = 80;
+                    img.style.objectFit = "cover";
+                    imageCell.appendChild(img);
+                    
+                    // Name cell
+                    const nameCell = document.createElement('td');
+                    nameCell.textContent = weapon.name;
+                    
+                    // Type cell
+                    const typeCell = document.createElement('td');
+                    typeCell.textContent = weapon.type;
+                    
+                    // Description cell
+                    const descCell = document.createElement('td');
+                    descCell.textContent = weapon.description;
+                    
+                    row.appendChild(imageCell);
+                    row.appendChild(nameCell);
+                    row.appendChild(typeCell);
+                    row.appendChild(descCell);
+                    
+                    tableBody.appendChild(row);
+                  }
+                });
+              }
+            })
+            .catch(error => {
+              console.error('Error loading weapon data:', error);
+            });
+        });
+      </script>
     </section>
 
     <section class="psychic-powers">

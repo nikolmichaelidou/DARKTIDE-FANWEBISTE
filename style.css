@@ -166,7 +166,7 @@ h2::after {
 
 h3 {
   font-size: 1.4em;
-  color: var(--psyker-vibrant);
+  color: #fdfeff;
   text-shadow: 0 0 5px rgba(255, 94, 255, 0.4);
 }
 
@@ -410,7 +410,7 @@ button:hover, .button:hover {
 }
 
 .psyker-type h3, .discipline-card h3 {
-  color: var(--psyker-blue);
+  color: #fdfeff;
 }
 
 /* Focus Styles for Accessibility */
@@ -456,7 +456,7 @@ a:focus, button:focus {
 }
 
 .imperial-psyker h3 {
-  color: var(--psyker-blue);
+  color: #fdfeff;
 }
 
 .chaos-psyker {
@@ -482,7 +482,7 @@ a:focus, button:focus {
 }
 
 .librarian-psyker h3 {
-  color: var(--librarian-blue);
+  color: #fdfeff;
 }
 
 /* Different psyker type highlights */
@@ -493,7 +493,7 @@ a:focus, button:focus {
 }
 
 .highlight-librarian {
-  color: var(--librarian-blue);
+  color: #fcfdff;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(29, 66, 138, 0.6);
 }
